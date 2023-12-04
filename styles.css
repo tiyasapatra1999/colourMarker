@@ -32,13 +32,24 @@ h1 {
   .red {
     background: linear-gradient(rgb(122, 74, 14), rgb(245, 62, 113), rgb(162, 27, 27));
     box-shadow: 0 0 20px 0 rgba(83, 14, 14, 0.8);
+    animation: spinAnimate 2s steps(3) 0s infinite normal;
   }
   
   .green {
     background: linear-gradient(#55680D, #71F53E, #116C31);
     box-shadow: 0 0 20px 0 #3B7E20CC;
+    animation: spinAnimate 2s steps(5) 0s infinite normal;
   }
   .blue {
     background: linear-gradient(hsl(186, 76%, 16%), hsl(223, 90%, 60%), hsl(240, 56%, 42%));
     box-shadow: 0 0 20px 0 hsla(223, 59%,31%, 0.8);
+    animation: spinAnimate 2s steps(7) 0s infinite normal;
+  }
+  @keyframes spinAnimate{
+    from{
+      transform: rotate(0deg);
+    }
+    to{
+      transform: rotate(360deg);
+    }
   }
